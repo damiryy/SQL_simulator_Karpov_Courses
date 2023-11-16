@@ -53,3 +53,5 @@ SELECT product_id ,
        price
 FROM   products
 ORDER BY name asc;
+
+-----------------------------------------
