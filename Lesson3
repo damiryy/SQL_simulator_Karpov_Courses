@@ -71,3 +71,14 @@ SELECT courier_id ,
        time
 FROM   courier_actions
 ORDER BY courier_id asc , action asc , time desc limit 1000;
+-----------------------------------------------------
+Задача 4.
+Используя операторы SELECT, FROM, ORDER BY и LIMIT, определите 5 самых дорогих товаров в таблице products, которые доставляет наш сервис. Выведите их наименования и цену.
+Поля в результирующей таблице: name, price
+ Подсказка
+Для решения задачи необходимо отсортировать товары по убыванию цены и ограничить число выводимых записей.
+Решение:
+SELECT name,
+       price
+FROM   products
+ORDER BY price desc limit 5
